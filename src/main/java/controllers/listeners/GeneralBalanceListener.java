@@ -14,13 +14,13 @@ import java.util.List;
 
 public class GeneralBalanceListener implements FocusListener {
 
-    private  Baby baby;
-    private  NeoCalc neoCalc;
-    public GeneralBalanceListener(Baby baby, NeoCalc neoCalc){
+    private Baby baby;
+    private NeoCalc neoCalc;
+
+    public GeneralBalanceListener(Baby baby, NeoCalc neoCalc) {
         this.baby = baby;
         this.neoCalc = neoCalc;
     }
-
 
     @Override
     public void focusGained(FocusEvent e) {
@@ -32,21 +32,21 @@ public class GeneralBalanceListener implements FocusListener {
 
                 String nameBaby = field.getName();
 
-                if(!nameBaby.equals("drugs") && !nameBaby.equals("kKalFats") && !nameBaby.equals("kKalCarbohydrates")) {
+                if (!nameBaby.equals("drugs") && !nameBaby.equals("kKalFats") && !nameBaby.equals("kKalCarbohydrates")) {
                     double value = (Double) field.get(baby);
                     Field neoCalcField = neoCalc.getClass().getDeclaredField(nameBaby);
                     neoCalcField.setAccessible(true);
                     JTextField jTextField = (JTextField) neoCalcField.get(neoCalc);
-                    String txt =String.valueOf(new BigDecimal(value).setScale(2, RoundingMode.HALF_UP).doubleValue());
-                    Double inputValue = jTextField.getText().equals("")? 0 :Double.parseDouble(jTextField.getText());
-                    if(inputValue!=value){
-                        jTextField.setText(txt);}
+                    String txt = String.valueOf(new BigDecimal(value).setScale(2, RoundingMode.HALF_UP).doubleValue());
+                    Double inputValue = jTextField.getText().equals("") ? 0 : Double.parseDouble(jTextField.getText());
+                    if (inputValue != value) {
+                        jTextField.setText(txt);
+                    }
                     neoCalcField.setAccessible(false);
                 }
-            }
-            catch (IllegalAccessException ex) {
+            } catch (IllegalAccessException ex) {
                 ex.printStackTrace();
-            }catch (NoSuchFieldException ex) {
+            } catch (NoSuchFieldException ex) {
                 ex.printStackTrace();
             }
         }

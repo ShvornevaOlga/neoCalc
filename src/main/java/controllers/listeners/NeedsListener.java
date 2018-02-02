@@ -7,6 +7,7 @@ import javax.swing.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -27,18 +28,18 @@ public class NeedsListener extends KeyAdapter {
         try {
             Method method = baby.getClass().getMethod("set" + name.substring(0, 1).toUpperCase() + name.substring(1), double.class);
             String value = ((JTextField) e.getSource()).getText();
-            if(value.equals("")){
+            if (value.equals("")) {
                 method.invoke(baby, 0);
-            }else {
+            } else {
                 method.invoke(baby, Double.parseDouble(value));
             }
 
-        } catch (SecurityException ex) {
-
-        } catch (NoSuchMethodException ex1) {
-
-        } catch (Exception exall) {
-
+        } catch (NoSuchMethodException e1) {
+            e1.printStackTrace();
+        } catch (IllegalAccessException e1) {
+            e1.printStackTrace();
+        } catch (InvocationTargetException e1) {
+            e1.printStackTrace();
         }
 
         baby.calculate();

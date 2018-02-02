@@ -25,7 +25,7 @@ public class RTFPrinter {
         OutputStreamWriter out = null;
         File f = new File("resources/"+"output.rtf");
         try {
-            in = new FileInputStream("resources/"+"Za.rtf");
+            in = new FileInputStream("resources/"+"template.rtf");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             //todo

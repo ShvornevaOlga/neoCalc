@@ -4,7 +4,7 @@ import javax.swing.text.AttributeSet;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.DocumentFilter;
 
-public class DigitalFilter  extends DocumentFilter {
+public class DigitalFilter extends DocumentFilter {
     private static final String DIGITS = "\\d|\\.";
 
     @Override

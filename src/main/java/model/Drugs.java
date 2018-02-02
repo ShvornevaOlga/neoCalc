@@ -40,12 +40,12 @@ public class Drugs {
         return osmolarity;
     }
 
-    public Drugs(String drug){
+    Drugs(String drug){
         String propsName = getPropsFileName(drug);
         Properties props = new Properties();
         name = drug;
 
-        File f = new File("resources/"+propsName + ".prop");
+        File f = new File("resources/" +propsName + ".prop");
         if (f.exists()) {
             try {
                 InputStream is = new BufferedInputStream(new FileInputStream(f));
@@ -62,6 +62,7 @@ public class Drugs {
                 osmolality = Double.parseDouble(props.getProperty("osmolality"));
                 osmolarity = Double.parseDouble(props.getProperty("osmolarity"));
             } catch (NumberFormatException nfe) {
+                nfe.printStackTrace();
             }
         } else {
             //todo

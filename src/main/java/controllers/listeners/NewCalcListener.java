@@ -12,12 +12,14 @@ import java.util.Arrays;
 import java.util.List;
 
 public class NewCalcListener implements ActionListener {
-    private   NeoCalc neoCalc;
+    private NeoCalc neoCalc;
     private Controller controller;
-    public NewCalcListener(NeoCalc neoCalc, Controller controller){
+
+    public NewCalcListener(NeoCalc neoCalc, Controller controller) {
         this.neoCalc = neoCalc;
         this.controller = controller;
     }
+
     public void actionPerformed(ActionEvent e) {
         controller.setBaby(new Baby());
         controller.setFilter();

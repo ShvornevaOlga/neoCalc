@@ -27,38 +27,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class PrintListener implements ActionListener {
-    Baby baby;
+    private Baby baby;
 
     public PrintListener(Baby baby) {
         this.baby = baby;
     }
 
     public void actionPerformed(ActionEvent e) {
-
         RTFPrinter printer = new RTFPrinter(baby);
         printer.convert();
-
-        PrinterJob pj = PrinterJob.getPrinterJob();
-
-        PageFormat pf = pj.pageDialog(pj.defaultPage());
-        pj.setPrintable(new Printer("resources/"+"output.rtf"), pf);
-        RTFView jFrame = new RTFView();
-        jFrame.setVisible(true);
-        PrintContent.printComponent(jFrame.editor);
-        jFrame.setVisible(false);
-        /*if (pj.printDialog()){
-
-            try{
-
-                pj.print();
-
-            }catch(PrinterException ep){}
-
-
-
-        }*/
-
-
-
     }
 }

@@ -1,7 +1,5 @@
 package model;
 
-import java.io.*;
-import java.util.Properties;
 
 public class Baby {
     private double weightBaby;
@@ -1080,9 +1078,6 @@ public class Baby {
         amountOfFatOnKg = amountOfFatOnWeight / weightBaby;
         amountOfCarbohydratesOnWeight = enteralVolumeOnWeight * drugs.getCarbohydrates() / 100;
         amountOfCarbohydratesOnKg = amountOfCarbohydratesOnWeight / weightBaby;
-
-        /*totalEnergySupplyOnWeight = enteralVolumeOnWeight * drugs.getkKal() / 100;
-        totalEnergySupplyOnKg = totalEnergySupplyOnWeight / weightBaby;*/
         energyCarbohydratesOnWeight = amountOfCarbohydratesOnWeight * kKalCarbohydrates;
         energyCarbohydratesOnKg = energyCarbohydratesOnWeight / weightBaby;
         energyFatsOnWeight = amountOfFatOnWeight * kKalFats;
@@ -1160,12 +1155,11 @@ public class Baby {
         enteralVolume = enteralVolumeOnWeight;
         amountOfDrugs = amountOfTherapeuticDrugs;
         double water = totalVolumeOfLiquid - enteralVolume - volumeParenteralInfusion - amountOfDrugs;
-        waterForFarming = water>0? water:0;
+        waterForFarming = water > 0 ? water : 0;
         dryMass = aminoven * 0.1 + glucose * 0.4;
-        //double volume = aminoven + glucose + KCl4 + gluconateCa + NaCl10 + NaCl09 + MgSO4 + waterForFarming;
         totalPr = volume + waterForFarming;
         if (totalPr != 0)
-            concentration = (dryMass*100 / totalPr);
+            concentration = (dryMass * 100 / totalPr);
     }
 
 
