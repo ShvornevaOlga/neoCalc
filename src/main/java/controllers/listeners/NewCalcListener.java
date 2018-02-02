@@ -14,7 +14,7 @@ import java.util.List;
 public class NewCalcListener implements ActionListener {
     private NeoCalc neoCalc;
     private Controller controller;
-
+    private final String JTEXTFIELD = "javax.swing.JTextField";
     public NewCalcListener(NeoCalc neoCalc, Controller controller) {
         this.neoCalc = neoCalc;
         this.controller = controller;
@@ -25,7 +25,7 @@ public class NewCalcListener implements ActionListener {
         controller.setFilter();
         List<Field> filds = Arrays.asList(neoCalc.getClass().getDeclaredFields());
         for (Field field : filds) {
-            if (field.getType().getName().equals("javax.swing.JTextField")) {
+            if (field.getType().getName().equals(JTEXTFIELD)) {
                 field.setAccessible(true);
                 try {
                     JTextField value = (JTextField) field.get(neoCalc);

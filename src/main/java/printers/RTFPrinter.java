@@ -23,7 +23,7 @@ public class RTFPrinter {
     public void convert() {
         InputStream in = null;
         OutputStreamWriter out = null;
-        File f = new File("resources/"+"output.rtf");
+        File f = new File("output.rtf");
         try {
             in = new FileInputStream("resources/"+"template.rtf");
         } catch (FileNotFoundException e) {
