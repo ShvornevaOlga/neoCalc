@@ -1,0 +1,19 @@
+maxWeight0 = 1
+maxWeight1 = 1.5
+maxWeight2 = 2.5
+
+
+minFatsDose0 = 2.5
+maxFatsDose0 = 4
+
+minFatsDose1 = 2
+maxFatsDose1 = 3.5
+
+minFatsDose2 = 1.5
+maxFatsDose2 = 3.5
+
+minFatsDose3 = 1
+maxFatsDose3 = 3.5
+
+minFatsDoseDefault = 1
+maxAminoAcidsDoseDefault = 3.5

@@ -1,0 +1,17 @@
+maxWeight0 = 1
+maxWeight1 = 1.5
+maxWeight2 = 2.5
+
+
+minAminoAcidsDose0 = 3
+maxAminoAcidsDose0 = 4
+
+minAminoAcidsDose1 = 2.5
+maxAminoAcidsDose1 = 4
+
+minAminoAcidsDose2 = 2
+maxAminoAcidsDose2 = 3.5
+
+minAminoAcidsDose3 = 1.5
+maxAminoAcidsDose3 = 3.5
+

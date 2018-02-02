@@ -1,0 +1,104 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="<c:url value="/resources/style.css"/>" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="<c:url value="/resources/js/dist/jquery.validate.js"/>"></script>
+        <script src="<c:url value="/resources/scripts.js"/>"></script>
+
+
+</head>
+<body>
+<div>
+    <form:form method="POST" modelAttribute="itemForm" id="addItem" >
+        <div class="mainDiv">
+            <table>
+                <tr>
+                    <td>
+                        <label for="titleItem">Title of item:</label>
+                    </td>
+                    <td>
+                        <spring:bind path="titleItem">
+                            <form:input type="text" path="titleItem"  placeholder="Title" autofocus="true" id="titleItem" name="titleItem" ></form:input>
+                        </spring:bind>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="description">Description:</label>
+                    </td>
+
+
+                    <td>
+                        <spring:bind path="description">
+                            <form:textarea path="description" rows="10" cols="30" />
+                        </spring:bind>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="startPrice">Start price:</label>
+                    </td>
+                    <td>
+                        <spring:bind path="startPrice">
+                            <form:input type="text" path="startPrice"   id="startPrice" name="startPrice" ></form:input>
+                        </spring:bind>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="time">Time left:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="time" id="time"  placeholder="12:00" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <label for="bidIncrement">Bid Increment:</label>
+                    </td>
+                    <td>
+                        <spring:bind path="bidIncrement">
+                            <form:input type="text" path="bidIncrement"  placeholder="10" id="bidIncrement" name="bidIncrement" ></form:input>
+                        </spring:bind>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="buyNow">Byu it Now:</label>
+                    </td>
+                    <td>
+                        <spring:bind path="buyItNow">
+                            <form:checkbox  path="buyItNow"  id="buyItNow" name="buyItNow" value="true" />
+                        </spring:bind>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        <input class="save" type="submit" value="Publish/Save"/>
+                        <input class="reset" type="reset" value="Reset"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form:form>
+</div>
+<div class="references">
+    <p class="signInSubmit">
+        ${login}
+    </p>
+</div>
+
+</body>
+</html>

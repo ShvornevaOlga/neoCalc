@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<fields>
+    <description><![CDATA[]]></description>
+    <!-- Bookmark Pattern -->
+
+    <mergefield>
+        <list>true</list>
+        <listInfo>$[developers].Email</listInfo>
+        <name>$developers.Email</name>
+        <description><![CDATA[]]></description>
+    </mergefield>
+    <mergefield>
+        <list>true</list>
+        <listInfo>$[developers].Name</listInfo>
+        <name>$developers.Name</name>
+        <description><![CDATA[]]></description>
+    </mergefield>
+
+    <mergefield>
+        <list>false</list>
+        <listInfo>$baby.weightBaby</listInfo>
+        <name>$baby.weightBaby</name>
+        <description><![CDATA[]]></description>
+    </mergefield>
+    <mergefield>
+        <list>false</list>
+        <listInfo>$date</listInfo>
+        <name>$date</name>
+        <description><![CDATA[]]></description>
+    </mergefield>
+</fields>

@@ -1,0 +1,3170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.NeoCalc">
+  <grid id="27dc6" binding="panel" layout-manager="GridLayoutManager" row-count="2" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="843" height="609"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="bb282" binding="JTabbed">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="300" height="300"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="fc65b" binding="needsTab" layout-manager="GridLayoutManager" row-count="10" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Потребности"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="26406" layout-manager="GridLayoutManager" row-count="1" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="6" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="487" height="39"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="56daf" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="1"/>
+                      <text value="Срок гестации, недели"/>
+                    </properties>
+                  </component>
+                  <component id="7756c" class="javax.swing.JTextField" binding="gestationalAge">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="ca260" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="1"/>
+                      <text value="Сутки жизни"/>
+                    </properties>
+                  </component>
+                  <component id="65950" class="javax.swing.JTextField" binding="dayOfLife">
+                    <constraints>
+                      <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <hspacer id="83e0f">
+                    <constraints>
+                      <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="2fedf">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="d075f">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <component id="cc944" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="Суточные потребности"/>
+                </properties>
+              </component>
+              <component id="ca61e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="На 1 кг веса ребенка"/>
+                </properties>
+              </component>
+              <component id="21f89" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Аминокислоты"/>
+                </properties>
+              </component>
+              <component id="d7ea4" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/сутки"/>
+                </properties>
+              </component>
+              <component id="5705" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="5c76a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="На полный вес ребенка"/>
+                </properties>
+              </component>
+              <component id="ad768" class="javax.swing.JTextField" binding="aminoAcidsKg">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="e8e4f" class="javax.swing.JTextField" binding="aminoAcidsOnWeight">
+                <constraints>
+                  <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="302f9" class="javax.swing.JTextField" binding="fatsOnKg">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="4c1c9" class="javax.swing.JTextField" binding="carbohydratesOnKg">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="1f456" class="javax.swing.JTextField" binding="volumeOfFluidOnKg">
+                <constraints>
+                  <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="c6ca6" class="javax.swing.JTextField" binding="sodiumOnKg">
+                <constraints>
+                  <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="46b25" class="javax.swing.JTextField" binding="potassiumOnKg">
+                <constraints>
+                  <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="31747" class="javax.swing.JTextField" binding="calciumOnKg">
+                <constraints>
+                  <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="11f6c" class="javax.swing.JTextField" binding="magnesiumOnKg">
+                <constraints>
+                  <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="f4f83" class="javax.swing.JTextField" binding="fatsOnWeight">
+                <constraints>
+                  <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="2dbd5" class="javax.swing.JTextField" binding="carbohydratesOnWeight">
+                <constraints>
+                  <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="98d75" class="javax.swing.JTextField" binding="volumeOfFluidOnWeight">
+                <constraints>
+                  <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="e081a" class="javax.swing.JTextField" binding="sodiumOnWeight">
+                <constraints>
+                  <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="3e39" class="javax.swing.JTextField" binding="potassiumOnWeight">
+                <constraints>
+                  <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="8d16e" class="javax.swing.JTextField" binding="calciumOnWeight">
+                <constraints>
+                  <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="848e7" class="javax.swing.JTextField" binding="magnesiumOnWeight">
+                <constraints>
+                  <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="64fd4" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="c2654" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="35e6" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="4f9ad" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мг/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="20661" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мг/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="e250d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мг/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="cd3ae" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мг/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="b2e1f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/сутки"/>
+                </properties>
+              </component>
+              <component id="655a3" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/сутки"/>
+                </properties>
+              </component>
+              <component id="9b096" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/сутки"/>
+                </properties>
+              </component>
+              <component id="6f86b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мг/сутки"/>
+                </properties>
+              </component>
+              <component id="2762e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мг/сутки"/>
+                </properties>
+              </component>
+              <component id="1c111" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мг/сутки"/>
+                </properties>
+              </component>
+              <component id="9a30c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="9" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мг/сутки"/>
+                </properties>
+              </component>
+              <component id="4e855" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Жиры"/>
+                </properties>
+              </component>
+              <component id="d3a29" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Углеводы"/>
+                </properties>
+              </component>
+              <component id="4f95b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Объем жидкости"/>
+                </properties>
+              </component>
+              <component id="c21a1" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Натрий"/>
+                </properties>
+              </component>
+              <component id="272ae" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Калий"/>
+                </properties>
+              </component>
+              <component id="1e79a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Кальций"/>
+                </properties>
+              </component>
+              <component id="c92bc" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Магний"/>
+                </properties>
+              </component>
+              <hspacer id="be4e3">
+                <constraints>
+                  <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="43d0f">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="4e24">
+                <constraints>
+                  <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+          <grid id="c4a40" binding="enteralNutritionTab" layout-manager="GridLayoutManager" row-count="13" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Энтер. питание"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="4b3dd" layout-manager="GridLayoutManager" row-count="1" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="7" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="487" height="39"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="20842" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Препарат"/>
+                    </properties>
+                  </component>
+                  <component id="7ab28" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Число кормлений"/>
+                    </properties>
+                  </component>
+                  <component id="9b5e5" class="javax.swing.JTextField" binding="numberOfFeedings">
+                    <constraints>
+                      <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="eb97e" class="javax.swing.JComboBox" binding="drugsCombo">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <editable value="true"/>
+                    </properties>
+                  </component>
+                  <component id="71e00" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="в сутки"/>
+                    </properties>
+                  </component>
+                  <hspacer id="f3b6b">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="6575">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="6492d">
+                    <constraints>
+                      <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <component id="83e98" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=" "/>
+                </properties>
+              </component>
+              <component id="34bc5" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="На 1 кг веса ребенка"/>
+                </properties>
+              </component>
+              <component id="4913e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Энтеральный объем"/>
+                </properties>
+              </component>
+              <component id="8c714" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/сутки"/>
+                </properties>
+              </component>
+              <component id="5a842" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="e1def" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="На полный вес ребенка"/>
+                </properties>
+              </component>
+              <component id="283bc" class="javax.swing.JTextField" binding="enteralVolumeOnKg">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="15df2" class="javax.swing.JTextField" binding="enteralVolumeOnWeight">
+                <constraints>
+                  <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="a9ba7" class="javax.swing.JTextField" binding="singleEntVolumeOnKg">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="33f79" class="javax.swing.JTextField" binding="amountOfProteinOnKg">
+                <constraints>
+                  <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="72618" class="javax.swing.JTextField" binding="amountOfFatOnKg">
+                <constraints>
+                  <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="8316a" class="javax.swing.JTextField" binding="amountOfCarbohydratesOnKg">
+                <constraints>
+                  <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="abfe0" class="javax.swing.JTextField" binding="energyCarbohydratesOnKg">
+                <constraints>
+                  <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="38a69" class="javax.swing.JTextField" binding="energyFatsOnKg">
+                <constraints>
+                  <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="82c7c" class="javax.swing.JTextField" binding="totalEnergySupplyOnKg">
+                <constraints>
+                  <grid row="11" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="7f130" class="javax.swing.JTextField" binding="singleEntVolumeOnWeight">
+                <constraints>
+                  <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="3852e" class="javax.swing.JTextField" binding="amountOfProteinOnWeight">
+                <constraints>
+                  <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="26bd2" class="javax.swing.JTextField" binding="amountOfFatOnWeight">
+                <constraints>
+                  <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="e8d4f" class="javax.swing.JTextField" binding="amountOfCarbohydratesOnWeight">
+                <constraints>
+                  <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="f3106" class="javax.swing.JTextField" binding="energyCarbohydratesOnWeight">
+                <constraints>
+                  <grid row="9" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="96f4b" class="javax.swing.JTextField" binding="energyFatsOnWeight">
+                <constraints>
+                  <grid row="10" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="fe32a" class="javax.swing.JTextField" binding="totalEnergySupplyOnWeight">
+                <constraints>
+                  <grid row="11" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="9687" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/кормление/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="71e89" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="9a254" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="b4f73" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="2c14c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="ded22" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="10" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="e96df" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="11" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="90fdc" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/кормление/сутки"/>
+                </properties>
+              </component>
+              <component id="3d2a4" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/сутки"/>
+                </properties>
+              </component>
+              <component id="5b7bd" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/сутки"/>
+                </properties>
+              </component>
+              <component id="2cdd7" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/сутки"/>
+                </properties>
+              </component>
+              <component id="41177" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="9" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/сутки"/>
+                </properties>
+              </component>
+              <component id="bb3" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="10" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/сутки"/>
+                </properties>
+              </component>
+              <component id="4ebe4" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="11" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/сутки"/>
+                </properties>
+              </component>
+              <component id="2d0cd" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Энт.Разовый объем"/>
+                </properties>
+              </component>
+              <component id="1f7a0" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Количество белков"/>
+                </properties>
+              </component>
+              <component id="e03b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Количество жиров"/>
+                </properties>
+              </component>
+              <component id="825e0" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Количество углеводов"/>
+                </properties>
+              </component>
+              <component id="bf53" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="углеводами"/>
+                </properties>
+              </component>
+              <component id="ca0be" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="жирами"/>
+                </properties>
+              </component>
+              <component id="addfb" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Общее энергообеспечение"/>
+                </properties>
+              </component>
+              <component id="a2388" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="Масса сухого вещества"/>
+                </properties>
+              </component>
+              <component id="e8fc9" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="Энергообеспечение"/>
+                </properties>
+              </component>
+              <component id="5908b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Полная энергия"/>
+                </properties>
+              </component>
+              <component id="15206" class="javax.swing.JTextField" binding="totalEnergyOnKg">
+                <constraints>
+                  <grid row="12" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="7d3a8" class="javax.swing.JTextField" binding="totalEnergyOnWeight">
+                <constraints>
+                  <grid row="12" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="fbfc2" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="12" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="22856" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="12" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/сутки"/>
+                </properties>
+              </component>
+              <hspacer id="ba8ed">
+                <constraints>
+                  <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="d946f">
+                <constraints>
+                  <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="c7376">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="ba228">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+          <grid id="d3fca" binding="parenteralNutritionTab" layout-manager="GridLayoutManager" row-count="14" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Парент. питание"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="e2414" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="На 1 кг веса ребенка"/>
+                </properties>
+              </component>
+              <component id="7118c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Доза аминокислот"/>
+                </properties>
+              </component>
+              <component id="93a1e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/сутки"/>
+                </properties>
+              </component>
+              <component id="d434a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="77206" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="На полный вес ребенка"/>
+                </properties>
+              </component>
+              <component id="774be" class="javax.swing.JTextField" binding="doseOfAminoAcidsOnKg">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="true"/>
+                  <enabled value="true"/>
+                </properties>
+              </component>
+              <component id="3aca" class="javax.swing.JTextField" binding="doseOfAminoAcidsOnWeight">
+                <constraints>
+                  <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="6f624" class="javax.swing.JTextField" binding="doseFatOnKg">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="1606b" class="javax.swing.JTextField" binding="rateOfGlucoseOnKg">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="b06fc" class="javax.swing.JTextField" binding="doseOfGlucoseOnKg">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="ef2f2" class="javax.swing.JTextField" binding="aminovenOnKg">
+                <constraints>
+                  <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="280ba" class="javax.swing.JTextField" binding="energyCarbohydratesOnKgP">
+                <constraints>
+                  <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="5b48c" class="javax.swing.JTextField" binding="energyFatsOnKgP">
+                <constraints>
+                  <grid row="11" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="10926" class="javax.swing.JTextField" binding="totalEnergySupplyOnKgP">
+                <constraints>
+                  <grid row="12" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="c72f7" class="javax.swing.JTextField" binding="doseFatOnWeight">
+                <constraints>
+                  <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="96c" class="javax.swing.JTextField" binding="rateOfGlucoseOnWeight">
+                <constraints>
+                  <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="f5e5d" class="javax.swing.JTextField" binding="doseOfGlucoseOnWeight">
+                <constraints>
+                  <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="1edab" class="javax.swing.JTextField" binding="aminovenOnWeight">
+                <constraints>
+                  <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="fc484" class="javax.swing.JTextField" binding="energyCarbohydratesOnWeightP">
+                <constraints>
+                  <grid row="10" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="990f4" class="javax.swing.JTextField" binding="energyFatsOnWeightP">
+                <constraints>
+                  <grid row="11" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="dc787" class="javax.swing.JTextField" binding="totalEnergySupplyOnWeightP">
+                <constraints>
+                  <grid row="12" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="86f7" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="326ad" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мг/кг/мин"/>
+                </properties>
+              </component>
+              <component id="ec320" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="bb2bf" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="3c0e3" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="10" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="68117" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="11" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="4dddb" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="12" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="295ef" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/сутки"/>
+                </properties>
+              </component>
+              <component id="b60cc" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мг/мин"/>
+                </properties>
+              </component>
+              <component id="a02d2" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/сутки"/>
+                </properties>
+              </component>
+              <component id="54439" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/сутки"/>
+                </properties>
+              </component>
+              <component id="a0de2" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="10" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/сутки"/>
+                </properties>
+              </component>
+              <component id="a1beb" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="11" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/сутки"/>
+                </properties>
+              </component>
+              <component id="7d57c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="12" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/сутки"/>
+                </properties>
+              </component>
+              <component id="6670a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Доза жиров"/>
+                </properties>
+              </component>
+              <component id="c3e0c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Скорость поступления глюкозы"/>
+                </properties>
+              </component>
+              <component id="da793" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Доза глюкозы"/>
+                </properties>
+              </component>
+              <component id="c4152" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Аминовен инфант 10%"/>
+                </properties>
+              </component>
+              <component id="a40aa" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="углеводами"/>
+                </properties>
+              </component>
+              <component id="3a30a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="жирами"/>
+                </properties>
+              </component>
+              <component id="23afc" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Общее энергообеспечение"/>
+                </properties>
+              </component>
+              <component id="bb5a4" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="Энергообеспечение"/>
+                </properties>
+              </component>
+              <component id="a4e25" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Полная энергия"/>
+                </properties>
+              </component>
+              <component id="bfca" class="javax.swing.JTextField" binding="totalEnergyOnKgP">
+                <constraints>
+                  <grid row="13" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="53586" class="javax.swing.JTextField" binding="totalEnergyOnWeightP">
+                <constraints>
+                  <grid row="13" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="25d63" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="13" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="78e23" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="13" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/сутки"/>
+                </properties>
+              </component>
+              <component id="13071" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="Объем инфузии"/>
+                </properties>
+              </component>
+              <component id="e91dc" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Жировая эмульсия 20%"/>
+                </properties>
+              </component>
+              <component id="aad3f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Раствор глюкозы 40%"/>
+                </properties>
+              </component>
+              <component id="f804f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="3ca73" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="77651" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/сутки"/>
+                </properties>
+              </component>
+              <component id="d375d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/сутки"/>
+                </properties>
+              </component>
+              <component id="d0ff4" class="javax.swing.JTextField" binding="fatEmulsionOnKg">
+                <constraints>
+                  <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="345cf" class="javax.swing.JTextField" binding="glucoseOnKg">
+                <constraints>
+                  <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="327fe" class="javax.swing.JTextField" binding="fatEmulsionOnWeight">
+                <constraints>
+                  <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="9bcac" class="javax.swing.JTextField" binding="glucoseOnWeight">
+                <constraints>
+                  <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <hspacer id="b6189">
+                <constraints>
+                  <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="2574c">
+                <constraints>
+                  <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="c4cf2">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="c6b50">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="1ebea" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="Масса сухого вещества"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="20c34" binding="programPPTab" layout-manager="GridLayoutManager" row-count="7" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Программа ПП на 24 часа"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="8caf5" layout-manager="GridLayoutManager" row-count="11" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="7" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="487" height="39"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="7eef" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Вода для разведения"/>
+                    </properties>
+                  </component>
+                  <component id="2ffda" class="javax.swing.JTextField" binding="waterForFarming">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="c410a" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Концентрация основного раствора"/>
+                    </properties>
+                  </component>
+                  <component id="92b6f" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Аминовен инфант 10%"/>
+                    </properties>
+                  </component>
+                  <component id="863a0" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/сутки"/>
+                    </properties>
+                  </component>
+                  <component id="10ae3" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="1"/>
+                      <text value="Программа"/>
+                    </properties>
+                  </component>
+                  <component id="61816" class="javax.swing.JTextField" binding="aminoven">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="a50cf" class="javax.swing.JTextField" binding="dryMass">
+                    <constraints>
+                      <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="d3ffc" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/сутки"/>
+                    </properties>
+                  </component>
+                  <component id="2d896" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="г"/>
+                    </properties>
+                  </component>
+                  <component id="8576" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Масса сухого вещества"/>
+                    </properties>
+                  </component>
+                  <component id="483de" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Раствор глюкозы 40%"/>
+                    </properties>
+                  </component>
+                  <component id="b300" class="javax.swing.JTextField" binding="glucose">
+                    <constraints>
+                      <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="f5fee" class="javax.swing.JTextField" binding="concentration">
+                    <constraints>
+                      <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="141a5" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/сутки"/>
+                    </properties>
+                  </component>
+                  <component id="8a527" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="%"/>
+                    </properties>
+                  </component>
+                  <component id="c8642" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Концентрация раствора"/>
+                    </properties>
+                  </component>
+                  <component id="a65ed" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="1"/>
+                      <text value="Параметры инфузии"/>
+                    </properties>
+                  </component>
+                  <component id="ea540" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="KCl 4%"/>
+                    </properties>
+                  </component>
+                  <component id="3662b" class="javax.swing.JTextField" binding="KCl4">
+                    <constraints>
+                      <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="d81ad" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/сутки"/>
+                    </properties>
+                  </component>
+                  <component id="8cd92" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Глюконат Ca 10%"/>
+                    </properties>
+                  </component>
+                  <component id="604db" class="javax.swing.JTextField" binding="gluconateCa">
+                    <constraints>
+                      <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="6cd94" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/сутки"/>
+                    </properties>
+                  </component>
+                  <component id="1e20f" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="NaCl 10%"/>
+                    </properties>
+                  </component>
+                  <component id="35b8f" class="javax.swing.JTextField" binding="NaCl10">
+                    <constraints>
+                      <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="aea2b" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/сутки"/>
+                    </properties>
+                  </component>
+                  <component id="aed6d" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="NaCl 0.9%"/>
+                    </properties>
+                  </component>
+                  <component id="eb726" class="javax.swing.JTextField" binding="NaCl09">
+                    <constraints>
+                      <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="78424" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/сутки"/>
+                    </properties>
+                  </component>
+                  <component id="40e58" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="MgSO4 25%"/>
+                    </properties>
+                  </component>
+                  <component id="d8a8d" class="javax.swing.JTextField" binding="MgSO4">
+                    <constraints>
+                      <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="7e724" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/сутки"/>
+                    </properties>
+                  </component>
+                  <component id="d4920" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="ИТОГО"/>
+                    </properties>
+                  </component>
+                  <component id="ce6cc" class="javax.swing.JTextField" binding="totalPr">
+                    <constraints>
+                      <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="7b3a6" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/сутки"/>
+                    </properties>
+                  </component>
+                  <component id="32fc5" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Время введения осн. р-ра"/>
+                    </properties>
+                  </component>
+                  <component id="c5f7b" class="javax.swing.JTextField" binding="introductionOfTheBasicSolution">
+                    <constraints>
+                      <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="2d359" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="час"/>
+                    </properties>
+                  </component>
+                  <component id="9fe10" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Скорость введения осн. р-ра"/>
+                    </properties>
+                  </component>
+                  <component id="ea1d6" class="javax.swing.JTextField" binding="rateOfIntroductionOfTheBasicSolution">
+                    <constraints>
+                      <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="6a9d8" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/час"/>
+                    </properties>
+                  </component>
+                  <component id="17f43" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Объем ЖЭ 20%"/>
+                    </properties>
+                  </component>
+                  <component id="cf065" class="javax.swing.JTextField" binding="amountGE">
+                    <constraints>
+                      <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="aa522" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/сутки"/>
+                    </properties>
+                  </component>
+                  <component id="15d6a" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Время введения ЖЭ 20%"/>
+                    </properties>
+                  </component>
+                  <component id="81de4" class="javax.swing.JTextField" binding="introductionGE">
+                    <constraints>
+                      <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="9369a" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="час"/>
+                    </properties>
+                  </component>
+                  <component id="b136d" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="9" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/час"/>
+                    </properties>
+                  </component>
+                  <component id="bfe4d" class="javax.swing.JTextField" binding="rateOfIntroductionGE">
+                    <constraints>
+                      <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <editable value="false"/>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="74eae" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Скорость введения ЖЭ 20%"/>
+                    </properties>
+                  </component>
+                  <component id="a8c88" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="10" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Объем лечебных препаратов"/>
+                    </properties>
+                  </component>
+                  <component id="ffe5b" class="javax.swing.JTextField" binding="amountOfTherapeuticDrugs">
+                    <constraints>
+                      <grid row="10" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="23ab4" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="10" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/сутки"/>
+                    </properties>
+                  </component>
+                  <hspacer id="51980">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <component id="49624" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="Электролиты"/>
+                </properties>
+              </component>
+              <component id="83967" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="На 1 кг веса ребенка"/>
+                </properties>
+              </component>
+              <component id="eaa00" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Доза KCl 4%"/>
+                </properties>
+              </component>
+              <component id="fa806" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/сутки"/>
+                </properties>
+              </component>
+              <component id="d7b8c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ммоль/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="21234" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="На полный вес ребенка"/>
+                </properties>
+              </component>
+              <component id="3e5d7" class="javax.swing.JTextField" binding="doseKCLOnKg">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="7e80c" class="javax.swing.JTextField" binding="doseKCLOnWeight">
+                <constraints>
+                  <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="b017c" class="javax.swing.JTextField" binding="doseGluconateCaOnKg">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="26594" class="javax.swing.JTextField" binding="doseNaCl10OnKg">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="929bd" class="javax.swing.JTextField" binding="doseGluconateCaOnWeight">
+                <constraints>
+                  <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="cc2a0" class="javax.swing.JTextField" binding="doseNaCl10OnWeight">
+                <constraints>
+                  <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="4e4c6" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ммоль/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="fe30b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ммоль/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="42b40" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/сутки"/>
+                </properties>
+              </component>
+              <component id="98c3e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/сутки"/>
+                </properties>
+              </component>
+              <component id="3ab78" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Доза глюконат Ca 10%"/>
+                </properties>
+              </component>
+              <component id="7b014" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Доза NaCl 10%"/>
+                </properties>
+              </component>
+              <component id="d03e7" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Доза NaCl 0.9%"/>
+                </properties>
+              </component>
+              <component id="edf2b" class="javax.swing.JTextField" binding="doseNaCl09OnKg">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="6809" class="javax.swing.JTextField" binding="doseNaCl09OnWeight">
+                <constraints>
+                  <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="baae5" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ммоль/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="fffdc" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/сутки"/>
+                </properties>
+              </component>
+              <component id="954ae" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Доза MgSO4 25%"/>
+                </properties>
+              </component>
+              <component id="3d8c9" class="javax.swing.JTextField" binding="doseMgSO4OnKg">
+                <constraints>
+                  <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="c1251" class="javax.swing.JTextField" binding="doseMgSO4OnWeight">
+                <constraints>
+                  <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="df1f6" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ммоль/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="1e82f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="мл/сутки"/>
+                </properties>
+              </component>
+              <hspacer id="74d92">
+                <constraints>
+                  <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="ccb12">
+                <constraints>
+                  <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="955ff">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="4e4c5">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+          <grid id="7f269" binding="generalBalanceTab" layout-manager="GridLayoutManager" row-count="10" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Общий баланс"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="1f4bd" layout-manager="GridLayoutManager" row-count="4" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="7" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="487" height="39"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="df05a" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Общий объем жидкости"/>
+                    </properties>
+                  </component>
+                  <component id="e58f8" class="javax.swing.JTextField" binding="totalVolumeOfLiquid">
+                    <constraints>
+                      <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="59aa0" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Энтеральный объем"/>
+                    </properties>
+                  </component>
+                  <component id="6914c" class="javax.swing.JTextField" binding="enteralVolume">
+                    <constraints>
+                      <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="c9a30" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Объем парент. инфузии"/>
+                    </properties>
+                  </component>
+                  <component id="c4196" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/сутки"/>
+                    </properties>
+                  </component>
+                  <component id="aa42c" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/сутки"/>
+                    </properties>
+                  </component>
+                  <component id="d2e30" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="1"/>
+                      <text value="Баланс жидкости"/>
+                    </properties>
+                  </component>
+                  <component id="5ee32" class="javax.swing.JTextField" binding="volumeParenteralInfusion">
+                    <constraints>
+                      <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="7bee9" class="javax.swing.JTextField" binding="amountOfDrugs">
+                    <constraints>
+                      <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="7902d" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/сутки"/>
+                    </properties>
+                  </component>
+                  <component id="622d4" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/сутки"/>
+                    </properties>
+                  </component>
+                  <component id="67248" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Объем препаратов"/>
+                    </properties>
+                  </component>
+                  <component id="c1c23" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="Объем воды для разведения"/>
+                    </properties>
+                  </component>
+                  <component id="44a04" class="javax.swing.JTextField" binding="volumeOfWaterForBreeding">
+                    <constraints>
+                      <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="e7fd0" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="0"/>
+                      <text value="мл/сутки"/>
+                    </properties>
+                  </component>
+                  <hspacer id="4ce2e">
+                    <constraints>
+                      <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="92d6f">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="6c35c">
+                    <constraints>
+                      <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <component id="c8398" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="Масса сухого вещества(ЭП+ПП)"/>
+                </properties>
+              </component>
+              <component id="334fa" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="На 1 кг веса ребенка"/>
+                </properties>
+              </component>
+              <component id="64c38" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Количество белков"/>
+                </properties>
+              </component>
+              <component id="f2a94" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/сутки"/>
+                </properties>
+              </component>
+              <component id="cd1ef" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="f3683" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="На полный вес ребенка"/>
+                </properties>
+              </component>
+              <component id="ed4fc" class="javax.swing.JTextField" binding="amountOfProteinOnKgG">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="71b27" class="javax.swing.JTextField" binding="amountOfProteinOnWeightG">
+                <constraints>
+                  <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="490e9" class="javax.swing.JTextField" binding="amountOfFatOnKgG">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="6164c" class="javax.swing.JTextField" binding="amountOfCarbohydratesOnKgG">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="cc39f" class="javax.swing.JTextField" binding="energyCarbohydratesOnKgG">
+                <constraints>
+                  <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="4522f" class="javax.swing.JTextField" binding="energyFatsOnKgG">
+                <constraints>
+                  <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="68a99" class="javax.swing.JTextField" binding="totalEnergySupplyOnKgG">
+                <constraints>
+                  <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="394dc" class="javax.swing.JTextField" binding="totalEnergyOnKgG">
+                <constraints>
+                  <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="d6bbe" class="javax.swing.JTextField" binding="amountOfFatOnWeightG">
+                <constraints>
+                  <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="8f002" class="javax.swing.JTextField" binding="amountOfCarbohydratesOnWeightG">
+                <constraints>
+                  <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="6dcb" class="javax.swing.JTextField" binding="energyCarbohydratesOnWeightG">
+                <constraints>
+                  <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="5f263" class="javax.swing.JTextField" binding="energyFatsOnWeightG">
+                <constraints>
+                  <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="49b4d" class="javax.swing.JTextField" binding="totalEnergySupplyOnWeightG">
+                <constraints>
+                  <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="3ce67" class="javax.swing.JTextField" binding="totalEnergyOnWeightG">
+                <constraints>
+                  <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                </properties>
+              </component>
+              <component id="91aa4" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="62488" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="1b5e0" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="336a6" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="4c9a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="e0eb7" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/кг/сутки"/>
+                </properties>
+              </component>
+              <component id="53dbd" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/сутки"/>
+                </properties>
+              </component>
+              <component id="256b5" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="г/сутки"/>
+                </properties>
+              </component>
+              <component id="44146" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/сутки"/>
+                </properties>
+              </component>
+              <component id="e48ac" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/сутки"/>
+                </properties>
+              </component>
+              <component id="d18ea" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/сутки"/>
+                </properties>
+              </component>
+              <component id="9f290" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="ккал/сутки"/>
+                </properties>
+              </component>
+              <component id="b9f42" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Количество жиров"/>
+                </properties>
+              </component>
+              <component id="7c67b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Количество углеводов"/>
+                </properties>
+              </component>
+              <component id="a6dd" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="углеводами"/>
+                </properties>
+              </component>
+              <component id="588a0" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="жирами"/>
+                </properties>
+              </component>
+              <component id="ddbcb" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Общее энергообеспечение"/>
+                </properties>
+              </component>
+              <component id="763b9" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="0"/>
+                  <text value="Полная энергия"/>
+                </properties>
+              </component>
+              <component id="a2994" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="Энергообеспечение"/>
+                </properties>
+              </component>
+              <hspacer id="15a2a">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="9a096">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+      <component id="cadf" class="javax.swing.JButton" binding="newCalculationButton">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="100" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Новый расчет"/>
+        </properties>
+      </component>
+      <component id="ad7b6" class="javax.swing.JLabel" binding="weightLable">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font style="1"/>
+          <labelFor value="cc208"/>
+          <text value="Вес новорожденного, кг"/>
+        </properties>
+      </component>
+      <component id="cc208" class="javax.swing.JTextField" binding="weightBaby">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="19e90" class="javax.swing.JButton" binding="printButton">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="100" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Печать протокола"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

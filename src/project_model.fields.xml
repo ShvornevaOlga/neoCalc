@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<fields>
+    <description><![CDATA[]]></description>
+    <!-- Bookmark Pattern -->
+    <bookmark>
+        <type>START_LOOP</type>
+        <name>START_LOOP_{i}</name>
+        <description><![CDATA[]]></description>
+    </bookmark>
+    <bookmark>
+        <type>END_LOOP</type>
+        <name>END_LOOP_{i}</name>
+        <description><![CDATA[]]></description>
+    </bookmark>
+    <mergefield>
+        <list>true</list>
+        <listInfo>$[developers].Email</listInfo>
+        <name>$developers.Email</name>
+        <description><![CDATA[]]></description>
+    </mergefield>
+    <mergefield>
+        <list>true</list>
+        <listInfo>$[developers].Name</listInfo>
+        <name>$developers.Name</name>
+        <description><![CDATA[]]></description>
+    </mergefield>
+    <mergefield>
+        <list>false</list>
+        <listInfo>$project.Name</listInfo>
+        <name>$project.Name</name>
+        <description><![CDATA[]]></description>
+    </mergefield>
+    <mergefield>
+        <list>false</list>
+        <listInfo>$date</listInfo>
+        <name>$date</name>
+        <description><![CDATA[]]></description>
+    </mergefield>
+</fields>

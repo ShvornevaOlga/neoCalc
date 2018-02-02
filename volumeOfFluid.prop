@@ -1,0 +1,41 @@
+minWeight0 = 0.75
+maxWeight0 = 1
+maxWeight1 = 1.25
+maxWeight2 = 1.5
+maxWeight3 = 2
+
+dayOfLife0 = 1
+dayOfLife1 = 2
+dayOfLife2 = 3
+dayOfLife3min = 4
+dayOfLife3max = 14
+
+minVolumeOfFluidOnKg00 = 70
+maxVolumeOfFluidOnKg00 = 90
+
+minVolumeOfFluidOnKg01 = 90
+maxVolumeOfFluidOnKg01 = 100
+
+minVolumeOfFluidOnKg02 = 110
+maxVolumeOfFluidOnKg02 = 120
+
+minVolumeOfFluidOnKg03 = 120
+maxVolumeOfFluidOnKg03 = 150
+
+minVolumeOfFluidOnKg04 = 150
+maxVolumeOfFluidOnKg04 = 180
+
+minVolumeOfFluidOnKg10 = 70
+maxVolumeOfFluidOnKg10 = 80
+
+minVolumeOfFluidOnKg11 = 80
+maxVolumeOfFluidOnKg11 = 90
+
+minVolumeOfFluidOnKg12 = 90
+maxVolumeOfFluidOnKg12 = 110
+
+minVolumeOfFluidOnKg13 = 120
+maxVolumeOfFluidOnKg13 = 150
+
+minVolumeOfFluidOnKg14 = 140
+maxVolumeOfFluidOnKg14 = 170
